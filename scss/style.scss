@@ -1,0 +1,32 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background:  #070000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  .logo{
+    width: 20vw;
+  }
+  nav{
+    ul{
+      display: flex;
+      flex-direction: row;
+      list-style-type: none;
+      li{
+        margin: 10px;
+        a{
+          color: rgb(28, 175, 138);
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .search{
+    margin: 25px;
+  }
+}
