@@ -9,9 +9,10 @@ body {
 }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
@@ -21,7 +22,13 @@ header {
 }
 
 header .logo {
-  width: 20vw;
+  color: red;
+  width: 100px;
+}
+
+header nav {
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 header nav ul {
@@ -44,7 +51,64 @@ header nav ul li a {
   text-decoration: none;
 }
 
-header .search {
-  margin: 25px;
+header .searchArea {
+  margin-top: 35px;
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+
+header .searchArea #search {
+  margin: 10px;
+  margin-top: inherit;
+  display: inline-block;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 3px;
+  position: absolute;
+  z-index: 3;
+  width: 0px;
+  top: 0;
+  right: 0;
+  background: transparent;
+  -webkit-transition: width 0.4s cubic-bezier(0, 0.795, 0, 1);
+  transition: width 0.4s cubic-bezier(0, 0.795, 0, 1);
+  cursor: pointer;
+}
+
+header .searchArea #search:focus {
+  z-index: 1;
+  width: 25vw;
+  border-bottom: 1px solid #bbb;
+  cursor: text;
+}
+
+header .searchArea #search:hover {
+  border-bottom: 1px solid #bbb;
+}
+
+header .searchArea #submit {
+  margin: 10px;
+  margin-top: inherit;
+  height: 20px;
+  width: 20px;
+  z-index: 2;
+  display: inline-block;
+  color: red;
+  float: right;
+  background: #fff center center no-repeat;
+  text-indent: -100000px;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  opacity: 0.5;
+  -webkit-transition: opacity .4s ease-in-out;
+  transition: opacity .4s ease-in-out;
+}
+
+header .searchArea #submit:hover {
+  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */
