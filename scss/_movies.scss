@@ -1,0 +1,42 @@
+#movies{
+  margin-top: 0px;
+  h4{
+    font-size: 1.1rem;
+    padding: 20px;
+  }
+  .toprated{
+    margin-top: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .tmovie{
+      background: rgba(15, 189, 93, 0.459);
+      border-radius:3px;
+      width: 300px;
+      box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+      img{
+        height: auto;
+        max-width: 100%;
+      }
+      .tinfo{
+        color: #ddd;
+        display: flex;
+        justify-content: space-between;
+        padding: 1rem;
+        letter-spacing: 1px;
+        h3{
+          margin: 0;
+          font-size: 1rem;
+        }span{
+          font-size: 0.8rem;
+          background: #031d33b4;
+          padding: 0.25rem 0.35rem;
+        }
+      }
+    }
+  }
+
+}

@@ -9,30 +9,46 @@ async function getMovies(){
 
   console.log(responseJSON);
 
-  responseJSON.results.forEach(movie=>{
-    const img=document.createElement('img');
-    img.src=IMGPATH+movie.poster_path;
+  // responseJSON.results.forEach(movie=>{
+  //   const img=document.createElement('img');
+  //   img.src=IMGPATH+movie.poster_path;
 
-    document.body.appendChild(img);
-  });
-
-  return responseJSON;
-}
-async function getTV(){
-  const resp=await fetch(TVAPIURL);
-  const responseJSON=await resp.json();
-
-  console.log(responseJSON);
-
-  responseJSON.results.forEach(movie=>{
-    const img=document.createElement('img');
-    img.src=IMGPATH+movie.poster_path;
-
-    document.body.appendChild(img);
-  });
+  //   document.body.appendChild(img);
+  // });
 
   return responseJSON;
 }
+// async function getTV(){
+//   const resp=await fetch(TVAPIURL);
+//   const responseJSON=await resp.json();
+
+//   console.log(responseJSON);
+
+//   responseJSON.results.forEach(movie=>{
+//     const img=document.createElement('img');
+//     img.src=IMGPATH+movie.poster_path;
+
+//     document.body.appendChild(img);
+//   });
+
+//   return responseJSON;
+// }
 
 getMovies();
-getTV();
+
+
+// getTV();
+
+//Slider
+$(document).ready(function() {
+  var slider = $("#light-slider").lightSlider({
+    autoWidth:true,
+    loop:true,
+    speed:2000,
+    pauseOnHover:true,
+    pause:3000,
+    controls:false,
+    // pager:false
+  });
+  slider.play();
+});
