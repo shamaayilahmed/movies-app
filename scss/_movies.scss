@@ -11,14 +11,13 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-
+    
     .tmovie{
       background: rgba(15, 189, 93, 0.459);
       border-radius:3px;
       width: 300px;
       box-shadow: 0 4px 5px rgba(0,0,0,0.2);
       img{
-        height: auto;
         max-width: 100%;
       }
       .tinfo{
