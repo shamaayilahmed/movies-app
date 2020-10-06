@@ -7,7 +7,7 @@
   padding: 20px;
 }
 
-#movies .toprated {
+#movies #toprated, #movies #upcoming {
   margin-top: 0px;
   width: 100%;
   display: -webkit-box;
@@ -23,7 +23,8 @@
       flex-wrap: wrap;
 }
 
-#movies .toprated .tmovie {
+#movies #toprated .tmovie, #movies #toprated .umovie, #movies #upcoming .tmovie, #movies #upcoming .umovie {
+  margin: 10px;
   background: #09294481;
   border-radius: 3px;
   width: 300px;
@@ -31,12 +32,12 @@
           box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
 }
 
-#movies .toprated .tmovie img {
+#movies #toprated .tmovie img, #movies #toprated .umovie img, #movies #upcoming .tmovie img, #movies #upcoming .umovie img {
   height: 280px;
   width: 100%;
 }
 
-#movies .toprated .tmovie .tinfo {
+#movies #toprated .tmovie .tinfo, #movies #toprated .tmovie .uinfo, #movies #toprated .umovie .tinfo, #movies #toprated .umovie .uinfo, #movies #upcoming .tmovie .tinfo, #movies #upcoming .tmovie .uinfo, #movies #upcoming .umovie .tinfo, #movies #upcoming .umovie .uinfo {
   color: #ddd;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -51,15 +52,83 @@
   letter-spacing: 1px;
 }
 
-#movies .toprated .tmovie .tinfo h3 {
+#movies #toprated .tmovie .tinfo h3, #movies #toprated .tmovie .uinfo h3, #movies #toprated .umovie .tinfo h3, #movies #toprated .umovie .uinfo h3, #movies #upcoming .tmovie .tinfo h3, #movies #upcoming .tmovie .uinfo h3, #movies #upcoming .umovie .tinfo h3, #movies #upcoming .umovie .uinfo h3 {
   margin: 0;
   font-size: 1rem;
 }
 
-#movies .toprated .tmovie .tinfo span {
+#movies #toprated .tmovie .tinfo span, #movies #toprated .tmovie .uinfo span, #movies #toprated .umovie .tinfo span, #movies #toprated .umovie .uinfo span, #movies #upcoming .tmovie .tinfo span, #movies #upcoming .tmovie .uinfo span, #movies #upcoming .umovie .tinfo span, #movies #upcoming .umovie .uinfo span {
   font-size: 0.8rem;
   background: #031d33b4;
   padding: 0.25rem 0.35rem;
+}
+
+#movies #newrelease {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#movies #newrelease .nmovie {
+  margin: 1rem auto 1rem 1rem;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.205);
+          box-shadow: 0 4px 5px rgba(0, 0, 0, 0.205);
+  width: 160px;
+  background: rgba(255, 255, 255, 0.144);
+}
+
+#movies #newrelease .nmovie img {
+  max-width: 100%;
+}
+
+#movies #newrelease .nmovie .ninfo {
+  color: #eee;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5rem 1rem 1rem;
+  letter-spacing: 1px;
+}
+
+#movies #newrelease .nmovie .ninfo h5 {
+  margin: 0;
+}
+
+#movies #newrelease .nmovie .ninfo span {
+  background: rgba(0, 0, 0, 0.336);
+  padding: 0.2rem 0.5rem;
+  border-radius: 3px;
+}
+
+#movies #upcoming ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+#movies #upcoming ul::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+#tvs {
+  height: 100vh;
 }
 
 * {
