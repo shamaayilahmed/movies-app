@@ -13,18 +13,20 @@
     flex-wrap: wrap;
     
     .tmovie{
-      background: rgba(15, 189, 93, 0.459);
+      // background: rgba(15, 189, 93, 0.459);
+      background: #09294481;
       border-radius:3px;
       width: 300px;
       box-shadow: 0 4px 5px rgba(0,0,0,0.2);
       img{
-        height: 200px;
+        height: 280px;
         width: 100%;
       }
       .tinfo{
         color: #ddd;
         display: flex;
         justify-content: space-between;
+        align-items: center;
         padding: 1rem;
         letter-spacing: 1px;
         h3{

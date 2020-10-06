@@ -24,7 +24,7 @@
 }
 
 #movies .toprated .tmovie {
-  background: rgba(15, 189, 93, 0.459);
+  background: #09294481;
   border-radius: 3px;
   width: 300px;
   -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
@@ -32,7 +32,7 @@
 }
 
 #movies .toprated .tmovie img {
-  height: 200px;
+  height: 280px;
   width: 100%;
 }
 
@@ -44,6 +44,9 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 1rem;
   letter-spacing: 1px;
 }
@@ -163,7 +166,7 @@ header .searchArea #search::placeholder {
 
 header .searchArea #search:focus {
   z-index: 1;
-  width: 150px;
+  width: 100px;
   border-bottom: 1px solid #bbb;
   cursor: text;
 }
