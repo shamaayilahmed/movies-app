@@ -15,7 +15,9 @@ async function getMovies() {
   responseJSON.results.forEach(movie => {
     const {poster_path,title,vote_average}=movie;
     const movieEl = document.createElement('li');
-    movieEl.innerHTML = `
+    const movieC = document.createElement('div');
+    movieC.classList.add('tmovie');
+    movieC.innerHTML = `
     <div class="tmovie">
     <img src="${IMGPATH+poster_path}" alt="${title}">
     <div class="tinfo">
@@ -24,6 +26,7 @@ async function getMovies() {
     </div>
     </div>
     `;
+    movieEl.appendChild(movieC);
     toprated.appendChild(movieEl);
   });
 
