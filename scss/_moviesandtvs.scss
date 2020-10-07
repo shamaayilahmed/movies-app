@@ -1,10 +1,14 @@
-#movies{
+#movies,#tvs{
   margin-top: 0px;
-  h4{
+  h2{
     font-size: 1.1rem;
+    margin: 2rem 1rem;
+  }
+  h4{
+    font-size: 1rem;
     padding: 20px;
   }
-  #toprated,#upcoming{
+  #toprated,#upcoming,#ttoprated,#airtdy{
     margin-top: 0px;
     width: 100%;
     display: flex;
@@ -12,10 +16,10 @@
     align-items: center;
     flex-wrap: wrap;
     
-    .tmovie,.umovie{
+    .tmovie,.umovie,.ttv,.atv{
       // background: rgba(15, 189, 93, 0.459);
       margin: 10px;
-      background: #09294481;
+      background: #162835b6;
       border-radius:3px;
       width: 300px;
       box-shadow: 0 4px 5px rgba(0,0,0,0.2);
@@ -23,7 +27,7 @@
         height: 280px;
         width: 100%;
       }
-      .tinfo,.uinfo{
+      .tinfo,.uinfo,.ttinfo,.atinfo{
         color: #ddd;
         display: flex;
         justify-content: space-between;
@@ -35,29 +39,29 @@
           margin: 0;
           font-size: 1rem;
         }span{
-          font-size: 0.8rem;
-          background: #031d33b4;
+          font-size: 0.9rem;
+          background: rgba(0, 0, 0, 0.445);
           padding: 0.25rem 0.35rem;
         }
       }
     }
   }
 
-  #newrelease{
+  #newrelease,#onair{
     display: flex;
     flex-wrap: wrap;
-    .nmovie{
+    .nmovie,.ontv{
       margin: 1rem auto 1rem 1rem;
       
       border-radius: 3px;
       box-shadow: 0 4px 5px rgba(0, 0, 0, 0.205);
       width: 160px;
       
-      background: rgba(255, 255, 255, 0.144);
+      background: rgba(165, 18, 18, 0.151);
       img{
         max-width: 100%;
       }
-      .ninfo{
+      .ninfo,.oninfo{
         color: #eee;
         display: flex;
         justify-content: space-between;
@@ -68,7 +72,8 @@
           margin: 0;
         }
         span{
-          background: rgba(0, 0, 0, 0.336);
+          font-size: 0.9rem;
+          background: rgba(0, 0, 0, 0.445);
           padding: 0.2rem 0.5rem;
           border-radius: 3px;
         }
@@ -77,23 +82,18 @@
     }
   }
 
-  #upcoming{
-    ul{
-      display: flex;
-      flex-wrap: no-wrap;
-      flex-direction: row;
-      overflow-y: hidden;
-      overflow-x: scroll;
-      // scrollbar-width: 0px;
-      &::-webkit-scrollbar{
-        width: 0 !important;
-      }
-    }
-  }
+  // #upcoming{
+  //   ul{
+  //     display: flex;
+  //     flex-wrap: no-wrap;
+  //     flex-direction: row;
+  //     overflow-y: hidden;
+  //     overflow-x: scroll;
+  //     // scrollbar-width: 0px;
+  //     &::-webkit-scrollbar{
+  //       width: 0 !important;
+  //     }
+  //   }
+  // }
 
-}
-
-
-#tvs{
-  height: 100vh;
 }

@@ -1,13 +1,18 @@
-#movies {
+#movies, #tvs {
   margin-top: 0px;
 }
 
-#movies h4 {
+#movies h2, #tvs h2 {
   font-size: 1.1rem;
+  margin: 2rem 1rem;
+}
+
+#movies h4, #tvs h4 {
+  font-size: 1rem;
   padding: 20px;
 }
 
-#movies #toprated, #movies #upcoming {
+#movies #toprated, #movies #upcoming, #movies #ttoprated, #movies #airtdy, #tvs #toprated, #tvs #upcoming, #tvs #ttoprated, #tvs #airtdy {
   margin-top: 0px;
   width: 100%;
   display: -webkit-box;
@@ -23,21 +28,21 @@
       flex-wrap: wrap;
 }
 
-#movies #toprated .tmovie, #movies #toprated .umovie, #movies #upcoming .tmovie, #movies #upcoming .umovie {
+#movies #toprated .tmovie, #movies #toprated .umovie, #movies #toprated .ttv, #movies #toprated .atv, #movies #upcoming .tmovie, #movies #upcoming .umovie, #movies #upcoming .ttv, #movies #upcoming .atv, #movies #ttoprated .tmovie, #movies #ttoprated .umovie, #movies #ttoprated .ttv, #movies #ttoprated .atv, #movies #airtdy .tmovie, #movies #airtdy .umovie, #movies #airtdy .ttv, #movies #airtdy .atv, #tvs #toprated .tmovie, #tvs #toprated .umovie, #tvs #toprated .ttv, #tvs #toprated .atv, #tvs #upcoming .tmovie, #tvs #upcoming .umovie, #tvs #upcoming .ttv, #tvs #upcoming .atv, #tvs #ttoprated .tmovie, #tvs #ttoprated .umovie, #tvs #ttoprated .ttv, #tvs #ttoprated .atv, #tvs #airtdy .tmovie, #tvs #airtdy .umovie, #tvs #airtdy .ttv, #tvs #airtdy .atv {
   margin: 10px;
-  background: #09294481;
+  background: #162835b6;
   border-radius: 3px;
   width: 300px;
   -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
 }
 
-#movies #toprated .tmovie img, #movies #toprated .umovie img, #movies #upcoming .tmovie img, #movies #upcoming .umovie img {
+#movies #toprated .tmovie img, #movies #toprated .umovie img, #movies #toprated .ttv img, #movies #toprated .atv img, #movies #upcoming .tmovie img, #movies #upcoming .umovie img, #movies #upcoming .ttv img, #movies #upcoming .atv img, #movies #ttoprated .tmovie img, #movies #ttoprated .umovie img, #movies #ttoprated .ttv img, #movies #ttoprated .atv img, #movies #airtdy .tmovie img, #movies #airtdy .umovie img, #movies #airtdy .ttv img, #movies #airtdy .atv img, #tvs #toprated .tmovie img, #tvs #toprated .umovie img, #tvs #toprated .ttv img, #tvs #toprated .atv img, #tvs #upcoming .tmovie img, #tvs #upcoming .umovie img, #tvs #upcoming .ttv img, #tvs #upcoming .atv img, #tvs #ttoprated .tmovie img, #tvs #ttoprated .umovie img, #tvs #ttoprated .ttv img, #tvs #ttoprated .atv img, #tvs #airtdy .tmovie img, #tvs #airtdy .umovie img, #tvs #airtdy .ttv img, #tvs #airtdy .atv img {
   height: 280px;
   width: 100%;
 }
 
-#movies #toprated .tmovie .tinfo, #movies #toprated .tmovie .uinfo, #movies #toprated .umovie .tinfo, #movies #toprated .umovie .uinfo, #movies #upcoming .tmovie .tinfo, #movies #upcoming .tmovie .uinfo, #movies #upcoming .umovie .tinfo, #movies #upcoming .umovie .uinfo {
+#movies #toprated .tmovie .tinfo, #movies #toprated .tmovie .uinfo, #movies #toprated .tmovie .ttinfo, #movies #toprated .tmovie .atinfo, #movies #toprated .umovie .tinfo, #movies #toprated .umovie .uinfo, #movies #toprated .umovie .ttinfo, #movies #toprated .umovie .atinfo, #movies #toprated .ttv .tinfo, #movies #toprated .ttv .uinfo, #movies #toprated .ttv .ttinfo, #movies #toprated .ttv .atinfo, #movies #toprated .atv .tinfo, #movies #toprated .atv .uinfo, #movies #toprated .atv .ttinfo, #movies #toprated .atv .atinfo, #movies #upcoming .tmovie .tinfo, #movies #upcoming .tmovie .uinfo, #movies #upcoming .tmovie .ttinfo, #movies #upcoming .tmovie .atinfo, #movies #upcoming .umovie .tinfo, #movies #upcoming .umovie .uinfo, #movies #upcoming .umovie .ttinfo, #movies #upcoming .umovie .atinfo, #movies #upcoming .ttv .tinfo, #movies #upcoming .ttv .uinfo, #movies #upcoming .ttv .ttinfo, #movies #upcoming .ttv .atinfo, #movies #upcoming .atv .tinfo, #movies #upcoming .atv .uinfo, #movies #upcoming .atv .ttinfo, #movies #upcoming .atv .atinfo, #movies #ttoprated .tmovie .tinfo, #movies #ttoprated .tmovie .uinfo, #movies #ttoprated .tmovie .ttinfo, #movies #ttoprated .tmovie .atinfo, #movies #ttoprated .umovie .tinfo, #movies #ttoprated .umovie .uinfo, #movies #ttoprated .umovie .ttinfo, #movies #ttoprated .umovie .atinfo, #movies #ttoprated .ttv .tinfo, #movies #ttoprated .ttv .uinfo, #movies #ttoprated .ttv .ttinfo, #movies #ttoprated .ttv .atinfo, #movies #ttoprated .atv .tinfo, #movies #ttoprated .atv .uinfo, #movies #ttoprated .atv .ttinfo, #movies #ttoprated .atv .atinfo, #movies #airtdy .tmovie .tinfo, #movies #airtdy .tmovie .uinfo, #movies #airtdy .tmovie .ttinfo, #movies #airtdy .tmovie .atinfo, #movies #airtdy .umovie .tinfo, #movies #airtdy .umovie .uinfo, #movies #airtdy .umovie .ttinfo, #movies #airtdy .umovie .atinfo, #movies #airtdy .ttv .tinfo, #movies #airtdy .ttv .uinfo, #movies #airtdy .ttv .ttinfo, #movies #airtdy .ttv .atinfo, #movies #airtdy .atv .tinfo, #movies #airtdy .atv .uinfo, #movies #airtdy .atv .ttinfo, #movies #airtdy .atv .atinfo, #tvs #toprated .tmovie .tinfo, #tvs #toprated .tmovie .uinfo, #tvs #toprated .tmovie .ttinfo, #tvs #toprated .tmovie .atinfo, #tvs #toprated .umovie .tinfo, #tvs #toprated .umovie .uinfo, #tvs #toprated .umovie .ttinfo, #tvs #toprated .umovie .atinfo, #tvs #toprated .ttv .tinfo, #tvs #toprated .ttv .uinfo, #tvs #toprated .ttv .ttinfo, #tvs #toprated .ttv .atinfo, #tvs #toprated .atv .tinfo, #tvs #toprated .atv .uinfo, #tvs #toprated .atv .ttinfo, #tvs #toprated .atv .atinfo, #tvs #upcoming .tmovie .tinfo, #tvs #upcoming .tmovie .uinfo, #tvs #upcoming .tmovie .ttinfo, #tvs #upcoming .tmovie .atinfo, #tvs #upcoming .umovie .tinfo, #tvs #upcoming .umovie .uinfo, #tvs #upcoming .umovie .ttinfo, #tvs #upcoming .umovie .atinfo, #tvs #upcoming .ttv .tinfo, #tvs #upcoming .ttv .uinfo, #tvs #upcoming .ttv .ttinfo, #tvs #upcoming .ttv .atinfo, #tvs #upcoming .atv .tinfo, #tvs #upcoming .atv .uinfo, #tvs #upcoming .atv .ttinfo, #tvs #upcoming .atv .atinfo, #tvs #ttoprated .tmovie .tinfo, #tvs #ttoprated .tmovie .uinfo, #tvs #ttoprated .tmovie .ttinfo, #tvs #ttoprated .tmovie .atinfo, #tvs #ttoprated .umovie .tinfo, #tvs #ttoprated .umovie .uinfo, #tvs #ttoprated .umovie .ttinfo, #tvs #ttoprated .umovie .atinfo, #tvs #ttoprated .ttv .tinfo, #tvs #ttoprated .ttv .uinfo, #tvs #ttoprated .ttv .ttinfo, #tvs #ttoprated .ttv .atinfo, #tvs #ttoprated .atv .tinfo, #tvs #ttoprated .atv .uinfo, #tvs #ttoprated .atv .ttinfo, #tvs #ttoprated .atv .atinfo, #tvs #airtdy .tmovie .tinfo, #tvs #airtdy .tmovie .uinfo, #tvs #airtdy .tmovie .ttinfo, #tvs #airtdy .tmovie .atinfo, #tvs #airtdy .umovie .tinfo, #tvs #airtdy .umovie .uinfo, #tvs #airtdy .umovie .ttinfo, #tvs #airtdy .umovie .atinfo, #tvs #airtdy .ttv .tinfo, #tvs #airtdy .ttv .uinfo, #tvs #airtdy .ttv .ttinfo, #tvs #airtdy .ttv .atinfo, #tvs #airtdy .atv .tinfo, #tvs #airtdy .atv .uinfo, #tvs #airtdy .atv .ttinfo, #tvs #airtdy .atv .atinfo {
   color: #ddd;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -52,18 +57,18 @@
   letter-spacing: 1px;
 }
 
-#movies #toprated .tmovie .tinfo h3, #movies #toprated .tmovie .uinfo h3, #movies #toprated .umovie .tinfo h3, #movies #toprated .umovie .uinfo h3, #movies #upcoming .tmovie .tinfo h3, #movies #upcoming .tmovie .uinfo h3, #movies #upcoming .umovie .tinfo h3, #movies #upcoming .umovie .uinfo h3 {
+#movies #toprated .tmovie .tinfo h3, #movies #toprated .tmovie .uinfo h3, #movies #toprated .tmovie .ttinfo h3, #movies #toprated .tmovie .atinfo h3, #movies #toprated .umovie .tinfo h3, #movies #toprated .umovie .uinfo h3, #movies #toprated .umovie .ttinfo h3, #movies #toprated .umovie .atinfo h3, #movies #toprated .ttv .tinfo h3, #movies #toprated .ttv .uinfo h3, #movies #toprated .ttv .ttinfo h3, #movies #toprated .ttv .atinfo h3, #movies #toprated .atv .tinfo h3, #movies #toprated .atv .uinfo h3, #movies #toprated .atv .ttinfo h3, #movies #toprated .atv .atinfo h3, #movies #upcoming .tmovie .tinfo h3, #movies #upcoming .tmovie .uinfo h3, #movies #upcoming .tmovie .ttinfo h3, #movies #upcoming .tmovie .atinfo h3, #movies #upcoming .umovie .tinfo h3, #movies #upcoming .umovie .uinfo h3, #movies #upcoming .umovie .ttinfo h3, #movies #upcoming .umovie .atinfo h3, #movies #upcoming .ttv .tinfo h3, #movies #upcoming .ttv .uinfo h3, #movies #upcoming .ttv .ttinfo h3, #movies #upcoming .ttv .atinfo h3, #movies #upcoming .atv .tinfo h3, #movies #upcoming .atv .uinfo h3, #movies #upcoming .atv .ttinfo h3, #movies #upcoming .atv .atinfo h3, #movies #ttoprated .tmovie .tinfo h3, #movies #ttoprated .tmovie .uinfo h3, #movies #ttoprated .tmovie .ttinfo h3, #movies #ttoprated .tmovie .atinfo h3, #movies #ttoprated .umovie .tinfo h3, #movies #ttoprated .umovie .uinfo h3, #movies #ttoprated .umovie .ttinfo h3, #movies #ttoprated .umovie .atinfo h3, #movies #ttoprated .ttv .tinfo h3, #movies #ttoprated .ttv .uinfo h3, #movies #ttoprated .ttv .ttinfo h3, #movies #ttoprated .ttv .atinfo h3, #movies #ttoprated .atv .tinfo h3, #movies #ttoprated .atv .uinfo h3, #movies #ttoprated .atv .ttinfo h3, #movies #ttoprated .atv .atinfo h3, #movies #airtdy .tmovie .tinfo h3, #movies #airtdy .tmovie .uinfo h3, #movies #airtdy .tmovie .ttinfo h3, #movies #airtdy .tmovie .atinfo h3, #movies #airtdy .umovie .tinfo h3, #movies #airtdy .umovie .uinfo h3, #movies #airtdy .umovie .ttinfo h3, #movies #airtdy .umovie .atinfo h3, #movies #airtdy .ttv .tinfo h3, #movies #airtdy .ttv .uinfo h3, #movies #airtdy .ttv .ttinfo h3, #movies #airtdy .ttv .atinfo h3, #movies #airtdy .atv .tinfo h3, #movies #airtdy .atv .uinfo h3, #movies #airtdy .atv .ttinfo h3, #movies #airtdy .atv .atinfo h3, #tvs #toprated .tmovie .tinfo h3, #tvs #toprated .tmovie .uinfo h3, #tvs #toprated .tmovie .ttinfo h3, #tvs #toprated .tmovie .atinfo h3, #tvs #toprated .umovie .tinfo h3, #tvs #toprated .umovie .uinfo h3, #tvs #toprated .umovie .ttinfo h3, #tvs #toprated .umovie .atinfo h3, #tvs #toprated .ttv .tinfo h3, #tvs #toprated .ttv .uinfo h3, #tvs #toprated .ttv .ttinfo h3, #tvs #toprated .ttv .atinfo h3, #tvs #toprated .atv .tinfo h3, #tvs #toprated .atv .uinfo h3, #tvs #toprated .atv .ttinfo h3, #tvs #toprated .atv .atinfo h3, #tvs #upcoming .tmovie .tinfo h3, #tvs #upcoming .tmovie .uinfo h3, #tvs #upcoming .tmovie .ttinfo h3, #tvs #upcoming .tmovie .atinfo h3, #tvs #upcoming .umovie .tinfo h3, #tvs #upcoming .umovie .uinfo h3, #tvs #upcoming .umovie .ttinfo h3, #tvs #upcoming .umovie .atinfo h3, #tvs #upcoming .ttv .tinfo h3, #tvs #upcoming .ttv .uinfo h3, #tvs #upcoming .ttv .ttinfo h3, #tvs #upcoming .ttv .atinfo h3, #tvs #upcoming .atv .tinfo h3, #tvs #upcoming .atv .uinfo h3, #tvs #upcoming .atv .ttinfo h3, #tvs #upcoming .atv .atinfo h3, #tvs #ttoprated .tmovie .tinfo h3, #tvs #ttoprated .tmovie .uinfo h3, #tvs #ttoprated .tmovie .ttinfo h3, #tvs #ttoprated .tmovie .atinfo h3, #tvs #ttoprated .umovie .tinfo h3, #tvs #ttoprated .umovie .uinfo h3, #tvs #ttoprated .umovie .ttinfo h3, #tvs #ttoprated .umovie .atinfo h3, #tvs #ttoprated .ttv .tinfo h3, #tvs #ttoprated .ttv .uinfo h3, #tvs #ttoprated .ttv .ttinfo h3, #tvs #ttoprated .ttv .atinfo h3, #tvs #ttoprated .atv .tinfo h3, #tvs #ttoprated .atv .uinfo h3, #tvs #ttoprated .atv .ttinfo h3, #tvs #ttoprated .atv .atinfo h3, #tvs #airtdy .tmovie .tinfo h3, #tvs #airtdy .tmovie .uinfo h3, #tvs #airtdy .tmovie .ttinfo h3, #tvs #airtdy .tmovie .atinfo h3, #tvs #airtdy .umovie .tinfo h3, #tvs #airtdy .umovie .uinfo h3, #tvs #airtdy .umovie .ttinfo h3, #tvs #airtdy .umovie .atinfo h3, #tvs #airtdy .ttv .tinfo h3, #tvs #airtdy .ttv .uinfo h3, #tvs #airtdy .ttv .ttinfo h3, #tvs #airtdy .ttv .atinfo h3, #tvs #airtdy .atv .tinfo h3, #tvs #airtdy .atv .uinfo h3, #tvs #airtdy .atv .ttinfo h3, #tvs #airtdy .atv .atinfo h3 {
   margin: 0;
   font-size: 1rem;
 }
 
-#movies #toprated .tmovie .tinfo span, #movies #toprated .tmovie .uinfo span, #movies #toprated .umovie .tinfo span, #movies #toprated .umovie .uinfo span, #movies #upcoming .tmovie .tinfo span, #movies #upcoming .tmovie .uinfo span, #movies #upcoming .umovie .tinfo span, #movies #upcoming .umovie .uinfo span {
-  font-size: 0.8rem;
-  background: #031d33b4;
+#movies #toprated .tmovie .tinfo span, #movies #toprated .tmovie .uinfo span, #movies #toprated .tmovie .ttinfo span, #movies #toprated .tmovie .atinfo span, #movies #toprated .umovie .tinfo span, #movies #toprated .umovie .uinfo span, #movies #toprated .umovie .ttinfo span, #movies #toprated .umovie .atinfo span, #movies #toprated .ttv .tinfo span, #movies #toprated .ttv .uinfo span, #movies #toprated .ttv .ttinfo span, #movies #toprated .ttv .atinfo span, #movies #toprated .atv .tinfo span, #movies #toprated .atv .uinfo span, #movies #toprated .atv .ttinfo span, #movies #toprated .atv .atinfo span, #movies #upcoming .tmovie .tinfo span, #movies #upcoming .tmovie .uinfo span, #movies #upcoming .tmovie .ttinfo span, #movies #upcoming .tmovie .atinfo span, #movies #upcoming .umovie .tinfo span, #movies #upcoming .umovie .uinfo span, #movies #upcoming .umovie .ttinfo span, #movies #upcoming .umovie .atinfo span, #movies #upcoming .ttv .tinfo span, #movies #upcoming .ttv .uinfo span, #movies #upcoming .ttv .ttinfo span, #movies #upcoming .ttv .atinfo span, #movies #upcoming .atv .tinfo span, #movies #upcoming .atv .uinfo span, #movies #upcoming .atv .ttinfo span, #movies #upcoming .atv .atinfo span, #movies #ttoprated .tmovie .tinfo span, #movies #ttoprated .tmovie .uinfo span, #movies #ttoprated .tmovie .ttinfo span, #movies #ttoprated .tmovie .atinfo span, #movies #ttoprated .umovie .tinfo span, #movies #ttoprated .umovie .uinfo span, #movies #ttoprated .umovie .ttinfo span, #movies #ttoprated .umovie .atinfo span, #movies #ttoprated .ttv .tinfo span, #movies #ttoprated .ttv .uinfo span, #movies #ttoprated .ttv .ttinfo span, #movies #ttoprated .ttv .atinfo span, #movies #ttoprated .atv .tinfo span, #movies #ttoprated .atv .uinfo span, #movies #ttoprated .atv .ttinfo span, #movies #ttoprated .atv .atinfo span, #movies #airtdy .tmovie .tinfo span, #movies #airtdy .tmovie .uinfo span, #movies #airtdy .tmovie .ttinfo span, #movies #airtdy .tmovie .atinfo span, #movies #airtdy .umovie .tinfo span, #movies #airtdy .umovie .uinfo span, #movies #airtdy .umovie .ttinfo span, #movies #airtdy .umovie .atinfo span, #movies #airtdy .ttv .tinfo span, #movies #airtdy .ttv .uinfo span, #movies #airtdy .ttv .ttinfo span, #movies #airtdy .ttv .atinfo span, #movies #airtdy .atv .tinfo span, #movies #airtdy .atv .uinfo span, #movies #airtdy .atv .ttinfo span, #movies #airtdy .atv .atinfo span, #tvs #toprated .tmovie .tinfo span, #tvs #toprated .tmovie .uinfo span, #tvs #toprated .tmovie .ttinfo span, #tvs #toprated .tmovie .atinfo span, #tvs #toprated .umovie .tinfo span, #tvs #toprated .umovie .uinfo span, #tvs #toprated .umovie .ttinfo span, #tvs #toprated .umovie .atinfo span, #tvs #toprated .ttv .tinfo span, #tvs #toprated .ttv .uinfo span, #tvs #toprated .ttv .ttinfo span, #tvs #toprated .ttv .atinfo span, #tvs #toprated .atv .tinfo span, #tvs #toprated .atv .uinfo span, #tvs #toprated .atv .ttinfo span, #tvs #toprated .atv .atinfo span, #tvs #upcoming .tmovie .tinfo span, #tvs #upcoming .tmovie .uinfo span, #tvs #upcoming .tmovie .ttinfo span, #tvs #upcoming .tmovie .atinfo span, #tvs #upcoming .umovie .tinfo span, #tvs #upcoming .umovie .uinfo span, #tvs #upcoming .umovie .ttinfo span, #tvs #upcoming .umovie .atinfo span, #tvs #upcoming .ttv .tinfo span, #tvs #upcoming .ttv .uinfo span, #tvs #upcoming .ttv .ttinfo span, #tvs #upcoming .ttv .atinfo span, #tvs #upcoming .atv .tinfo span, #tvs #upcoming .atv .uinfo span, #tvs #upcoming .atv .ttinfo span, #tvs #upcoming .atv .atinfo span, #tvs #ttoprated .tmovie .tinfo span, #tvs #ttoprated .tmovie .uinfo span, #tvs #ttoprated .tmovie .ttinfo span, #tvs #ttoprated .tmovie .atinfo span, #tvs #ttoprated .umovie .tinfo span, #tvs #ttoprated .umovie .uinfo span, #tvs #ttoprated .umovie .ttinfo span, #tvs #ttoprated .umovie .atinfo span, #tvs #ttoprated .ttv .tinfo span, #tvs #ttoprated .ttv .uinfo span, #tvs #ttoprated .ttv .ttinfo span, #tvs #ttoprated .ttv .atinfo span, #tvs #ttoprated .atv .tinfo span, #tvs #ttoprated .atv .uinfo span, #tvs #ttoprated .atv .ttinfo span, #tvs #ttoprated .atv .atinfo span, #tvs #airtdy .tmovie .tinfo span, #tvs #airtdy .tmovie .uinfo span, #tvs #airtdy .tmovie .ttinfo span, #tvs #airtdy .tmovie .atinfo span, #tvs #airtdy .umovie .tinfo span, #tvs #airtdy .umovie .uinfo span, #tvs #airtdy .umovie .ttinfo span, #tvs #airtdy .umovie .atinfo span, #tvs #airtdy .ttv .tinfo span, #tvs #airtdy .ttv .uinfo span, #tvs #airtdy .ttv .ttinfo span, #tvs #airtdy .ttv .atinfo span, #tvs #airtdy .atv .tinfo span, #tvs #airtdy .atv .uinfo span, #tvs #airtdy .atv .ttinfo span, #tvs #airtdy .atv .atinfo span {
+  font-size: 0.9rem;
+  background: rgba(0, 0, 0, 0.445);
   padding: 0.25rem 0.35rem;
 }
 
-#movies #newrelease {
+#movies #newrelease, #movies #onair, #tvs #newrelease, #tvs #onair {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -71,20 +76,20 @@
       flex-wrap: wrap;
 }
 
-#movies #newrelease .nmovie {
+#movies #newrelease .nmovie, #movies #newrelease .ontv, #movies #onair .nmovie, #movies #onair .ontv, #tvs #newrelease .nmovie, #tvs #newrelease .ontv, #tvs #onair .nmovie, #tvs #onair .ontv {
   margin: 1rem auto 1rem 1rem;
   border-radius: 3px;
   -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.205);
           box-shadow: 0 4px 5px rgba(0, 0, 0, 0.205);
   width: 160px;
-  background: rgba(255, 255, 255, 0.144);
+  background: rgba(165, 18, 18, 0.151);
 }
 
-#movies #newrelease .nmovie img {
+#movies #newrelease .nmovie img, #movies #newrelease .ontv img, #movies #onair .nmovie img, #movies #onair .ontv img, #tvs #newrelease .nmovie img, #tvs #newrelease .ontv img, #tvs #onair .nmovie img, #tvs #onair .ontv img {
   max-width: 100%;
 }
 
-#movies #newrelease .nmovie .ninfo {
+#movies #newrelease .nmovie .ninfo, #movies #newrelease .nmovie .oninfo, #movies #newrelease .ontv .ninfo, #movies #newrelease .ontv .oninfo, #movies #onair .nmovie .ninfo, #movies #onair .nmovie .oninfo, #movies #onair .ontv .ninfo, #movies #onair .ontv .oninfo, #tvs #newrelease .nmovie .ninfo, #tvs #newrelease .nmovie .oninfo, #tvs #newrelease .ontv .ninfo, #tvs #newrelease .ontv .oninfo, #tvs #onair .nmovie .ninfo, #tvs #onair .nmovie .oninfo, #tvs #onair .ontv .ninfo, #tvs #onair .ontv .oninfo {
   color: #eee;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -99,36 +104,63 @@
   letter-spacing: 1px;
 }
 
-#movies #newrelease .nmovie .ninfo h5 {
+#movies #newrelease .nmovie .ninfo h5, #movies #newrelease .nmovie .oninfo h5, #movies #newrelease .ontv .ninfo h5, #movies #newrelease .ontv .oninfo h5, #movies #onair .nmovie .ninfo h5, #movies #onair .nmovie .oninfo h5, #movies #onair .ontv .ninfo h5, #movies #onair .ontv .oninfo h5, #tvs #newrelease .nmovie .ninfo h5, #tvs #newrelease .nmovie .oninfo h5, #tvs #newrelease .ontv .ninfo h5, #tvs #newrelease .ontv .oninfo h5, #tvs #onair .nmovie .ninfo h5, #tvs #onair .nmovie .oninfo h5, #tvs #onair .ontv .ninfo h5, #tvs #onair .ontv .oninfo h5 {
   margin: 0;
 }
 
-#movies #newrelease .nmovie .ninfo span {
-  background: rgba(0, 0, 0, 0.336);
+#movies #newrelease .nmovie .ninfo span, #movies #newrelease .nmovie .oninfo span, #movies #newrelease .ontv .ninfo span, #movies #newrelease .ontv .oninfo span, #movies #onair .nmovie .ninfo span, #movies #onair .nmovie .oninfo span, #movies #onair .ontv .ninfo span, #movies #onair .ontv .oninfo span, #tvs #newrelease .nmovie .ninfo span, #tvs #newrelease .nmovie .oninfo span, #tvs #newrelease .ontv .ninfo span, #tvs #newrelease .ontv .oninfo span, #tvs #onair .nmovie .ninfo span, #tvs #onair .nmovie .oninfo span, #tvs #onair .ontv .ninfo span, #tvs #onair .ontv .oninfo span {
+  font-size: 0.9rem;
+  background: rgba(0, 0, 0, 0.445);
   padding: 0.2rem 0.5rem;
   border-radius: 3px;
 }
 
-#movies #upcoming ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: no-wrap;
-      flex-wrap: no-wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  overflow-y: hidden;
-  overflow-x: scroll;
+@media screen and (min-width: 699px) {
+  header .logo svg {
+    margin: 5px;
+  }
+  header .logo svg text {
+    font-size: 1.5rem;
+  }
+  header nav ul li {
+    font-size: 1.2rem;
+  }
+  header nav ul li a {
+    margin: 20px;
+  }
+  main #movies h2, main #tvs h2 {
+    font-size: 1.3rem;
+  }
+  main #movies h4, main #tvs h4 {
+    font-size: 1.1rem;
+  }
+  main #movies h5, main #movies span, main #tvs h5, main #tvs span {
+    font-size: 0.9rem;
+  }
 }
 
-#movies #upcoming ul::-webkit-scrollbar {
-  width: 0 !important;
-}
-
-#tvs {
-  height: 100vh;
+@media screen and (min-width: 1025px) {
+  header .logo svg {
+    margin: 10px;
+  }
+  header .logo svg text {
+    font-size: 1.9rem;
+  }
+  header nav ul li {
+    font-size: 1.4rem;
+  }
+  header nav ul li a {
+    margin: 25px;
+  }
+  main #movies h2, main #tvs h2 {
+    font-size: 1.4rem;
+  }
+  main #movies h4, main #tvs h4 {
+    font-size: 1.2rem;
+  }
+  main #movies h5, main #movies span, main #tvs h5, main #tvs span {
+    font-size: 1rem;
+  }
 }
 
 * {
@@ -140,10 +172,92 @@
 }
 
 body {
-  color: #746969;
+  color: rgba(255, 255, 255, 0.63);
   background: #031d33;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-family: 'Poppins',sans-serif;
+}
+
+.spin-wrap {
+  position: fixed;
+  z-index: 99999;
+  background: #0a2c49;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.spinner {
+  position: relative;
+  height: 80px;
+  width: 80px;
+}
+
+.spinner-q {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: inherit;
+  width: inherit;
+  border: 4px solid transparent;
+  -webkit-animation: blink 1.5s infinite ease-out;
+          animation: blink 1.5s infinite ease-out;
+  border-radius: 50%;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    border-top-color: #444444;
+  }
+  33% {
+    border-top-color: rgba(63, 63, 63, 0.33);
+  }
+  100% {
+    border-top-color: rgba(59, 59, 59, 0);
+  }
+}
+
+@keyframes blink {
+  0% {
+    border-top-color: #444444;
+  }
+  33% {
+    border-top-color: rgba(63, 63, 63, 0.33);
+  }
+  100% {
+    border-top-color: rgba(59, 59, 59, 0);
+  }
+}
+
+.spinner .spinner-q-2 {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-animation-delay: 0.375s;
+          animation-delay: 0.375s;
+}
+
+.spinner .spinner-q-3 {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-animation-delay: 0.75s;
+          animation-delay: 0.75s;
+}
+
+.spinner .spinner-q-4 {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  -webkit-animation-delay: 1.125s;
+          animation-delay: 1.125s;
 }
 
 header {
@@ -165,6 +279,10 @@ header .logo {
   width: 100px;
 }
 
+header .logo svg {
+  font-size: 1.2rem;
+}
+
 header nav {
   margin: 15px;
   -ms-grid-column-align: center;
@@ -183,105 +301,33 @@ header nav ul {
 }
 
 header nav ul li {
-  margin: 15px;
+  margin: 15px 3px;
 }
 
 header nav ul li a {
-  color: #1caf8a;
+  color: #21c299;
   text-decoration: none;
 }
 
-header .searchArea {
-  margin-top: 30px;
-  -ms-grid-column-align: end;
-      justify-self: end;
+footer {
+  background: rgba(238, 238, 238, 0.171);
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-header .searchArea #search {
-  font-size: 0.95em;
-  margin: 10px;
-  margin-top: inherit;
-  display: inline-block;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 3px;
-  position: absolute;
-  z-index: 3;
-  width: 10px;
-  top: 0;
-  right: 6px;
-  background: transparent;
-  -webkit-transition: width 0.4s cubic-bezier(0, 0.795, 0, 1);
-  transition: width 0.4s cubic-bezier(0, 0.795, 0, 1);
-  cursor: pointer;
-}
-
-header .searchArea #search::-webkit-input-placeholder {
-  color: transparent;
-}
-
-header .searchArea #search:-ms-input-placeholder {
-  color: transparent;
-}
-
-header .searchArea #search::-ms-input-placeholder {
-  color: transparent;
-}
-
-header .searchArea #search::placeholder {
-  color: transparent;
-}
-
-header .searchArea #search:focus {
-  z-index: 1;
-  width: 100px;
-  border-bottom: 1px solid #bbb;
-  cursor: text;
-}
-
-header .searchArea #search:focus::-webkit-input-placeholder {
-  color: #bbb;
-}
-
-header .searchArea #search:focus:-ms-input-placeholder {
-  color: #bbb;
-}
-
-header .searchArea #search:focus::-ms-input-placeholder {
-  color: #bbb;
-}
-
-header .searchArea #search:focus::placeholder {
-  color: #bbb;
-}
-
-header .searchArea #search:focus:hover {
-  border-bottom: 1px solid #bbb;
-}
-
-header .searchArea #submit {
-  margin: 10px;
-  margin-top: inherit;
-  height: 20px;
-  width: 20px;
-  z-index: 2;
-  display: inline-block;
-  float: right;
-  background: url(/search.svg) center center no-repeat;
-  text-indent: -100000px;
-  border: none;
-  outline: none;
-  position: absolute;
-  top: 0;
-  right: 0;
-  cursor: pointer;
-  opacity: 0.5;
-  -webkit-transition: opacity .2s ease-in-out;
-  transition: opacity .2s ease-in-out;
-}
-
-header .searchArea #submit:hover {
-  opacity: 1;
+footer div {
+  margin: 5px;
 }
 /*# sourceMappingURL=style.css.map */

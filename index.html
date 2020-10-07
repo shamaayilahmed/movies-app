@@ -8,6 +8,9 @@
   <link rel="stylesheet" href="./styles/style.css">
   <script src="./app.js" defer></script>
 
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css"
     integrity="sha512-yJHCxhu8pTR7P2UgXFrHvLMniOAL5ET1f5Cj+/dzl+JIlGTh5Cz+IeklcXzMavKvXP8vXqKMQyZjscjf3ZDfGA=="
     crossorigin="anonymous" />
@@ -19,29 +22,42 @@
     crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body onload="loader()">
+
+<!-- preloader -->
+  <div class="spin-wrap">
+    <div class="spinner">
+      <div class="spinner-q spinner-q-1"></div>
+      <div class="spinner-q spinner-q-2"></div>
+      <div class="spinner-q spinner-q-3"></div>
+      <div class="spinner-q spinner-q-4"></div>
+    </div>
+  </div>
+
   <header>
     <div class="logo">
       <svg>
-        <text y="45" x="15" style="fill:none;stroke:#fff;font-size: 20px;stroke-width:2px;">
-          MOVIELAND
+        <text y="45" x="15" style="fill:#fff;stroke:#fff;stroke-width:2px;">
+          MTVLAND
       </svg>
     </div>
     <nav>
       <ul>
         <li><a href="#movies">Movie</a></li>
+        <li>|</li>
         <li><a href="#tvs">TV</a></li>
       </ul>
     </nav>
     <div class="searchArea">
-      <input type="text" id="search" name="search" placeholder="search" autocomplete="off">
-      <input type="submit" value="" id="submit">
+      
     </div>
   </header>
 
   <main>
     <section id="movies">
 
+
+      <h2>Explore movie</h2>
       <h4>Top rated</h4>
       <div id="toprated">
         <ul id="light-slider">
@@ -100,33 +116,15 @@
             <h5>Movie Title</h5>
             <span>8</span>
           </div>
-        </div>
-
-        
-        <div class="nmovie">
-          <img src="https://image.tmdb.org/t/p/w1280/riYInlsq2kf1AWoGm80JQW5dLKp.jpg" alt="">
-          <div class="ninfo">
-            <h5>Movie Title</h5>
-            <span>8</span>
-          </div>
-        </div>
-
-        
-        <div class="nmovie">
-          <img src="https://image.tmdb.org/t/p/w1280/riYInlsq2kf1AWoGm80JQW5dLKp.jpg" alt="">
-          <div class="ninfo">
-            <h5>Movie Title</h5>
-            <span>8</span>
-          </div>
         </div> -->
 
       </div>
 
 
-        <h4>Upcoming</h4>
-        <div id="upcoming">
-          <ul id="light-slider">
-            <!-- <li>
+      <h4>Upcoming</h4>
+      <div id="upcoming">
+        <ul id="light-slider1">
+          <!-- <li>
               <div class="umovie">
                 <img src="https://image.tmdb.org/t/p/w1280/riYInlsq2kf1AWoGm80JQW5dLKp.jpg" alt="">
                 <div class="uinfo">
@@ -144,15 +142,42 @@
                 </div>
               </div>
             </li> -->
-          </ul>
-        </div>
-    </section>
-    <section id="tvs">
-      <div class="popular">
-        
+        </ul>
       </div>
     </section>
+
+
+    <!-- TV -->
+    <section id="tvs">
+
+      <h2>Explore TV</h2>
+
+      <h4>Top rated</h4>
+      <div id="ttoprated">
+        <ul id="light-slider2">
+
+        </ul>
+      </div>
+
+      <h4>On air</h4>
+      <div id="onair">
+
+      </div>
+
+      <h4>Airing today</h4>
+      <div id="airtdy">
+        <ul id="light-slider3">
+
+        </ul>
+      </div>
+
+    </section>
   </main>
+
+  <footer>
+    <div>MTVLAND &copy; 2020</div>
+    <div>created by shamaayil</div>
+  </footer>
 </body>
 
 </html>

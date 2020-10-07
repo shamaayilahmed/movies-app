@@ -1,0 +1,80 @@
+@media screen and (min-width: 699px) {
+  header {
+    .logo {
+      svg {
+        margin: 5px;
+        text {
+          font-size: 1.5rem;
+        }
+      }
+    }
+    nav {
+      ul {
+        li {
+          font-size: 1.2rem;
+          a{
+            margin: 20px;
+          }
+        }
+      }
+    }
+    .searchArea {}
+  }
+
+  main{
+    #movies,#tvs{
+      h2{
+        font-size: 1.3rem ;
+      }
+      h4{
+        font-size: 1.1rem;
+      }
+      h5,span{
+        font-size: 0.9rem;
+      }
+
+    }
+  }
+
+}
+
+@media screen and (min-width: 1025px){
+  header {
+    .logo {
+      svg {
+        margin: 10px;
+        text {
+          font-size: 1.9rem;
+        }
+      }
+    }
+    nav {
+      ul {
+        li {
+          font-size: 1.4rem;
+          a{
+            margin: 25px;
+          }
+        }
+      }
+    }
+    .searchArea {}
+  }
+
+  main{
+    #movies,#tvs{
+      h2{
+        font-size: 1.4rem ;
+      }
+      h4{
+        font-size: 1.2rem;
+      }
+      h5,span{
+        font-size: 1rem;
+      }
+      
+    }
+  }
+
+}
+

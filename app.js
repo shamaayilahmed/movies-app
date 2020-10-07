@@ -1,13 +1,27 @@
+$(window).on("load",() =>{
+    $(".spin-wrap").fadeOut("slow");
+  });
+
+
 const PMURL = 'https://api.themoviedb.org/3/movie/popular?api_key=2d21bdf2bd0f6a43f9a0dc995b785d06&language=en-US&page=1';
 const NMURL='https://api.themoviedb.org/3/movie/now_playing?api_key=2d21bdf2bd0f6a43f9a0dc995b785d06&language=en-US&page=1';
 const UMURL='https://api.themoviedb.org/3/movie/upcoming?api_key=2d21bdf2bd0f6a43f9a0dc995b785d06&language=en-US&page=1';
+
+const PTURL='https://api.themoviedb.org/3/tv/popular?api_key=2d21bdf2bd0f6a43f9a0dc995b785d06&language=en-US&page=1';
+const NTURL='https://api.themoviedb.org/3/tv/on_the_air?api_key=2d21bdf2bd0f6a43f9a0dc995b785d06&language=en-US&page=1';
+const UTURL='https://api.themoviedb.org/3/tv/airing_today?api_key=2d21bdf2bd0f6a43f9a0dc995b785d06&language=en-US&page=1';
 
 const IMGPATH = 'https://image.tmdb.org/t/p/w1280';
 
 
 const toprated=document.getElementById('light-slider');
 const newrelease=document.getElementById('newrelease');
-const upcoming=document.getElementById('upcoming').querySelector('#light-slider');
+const upcoming=document.getElementById('light-slider1');
+
+const ttoprated=document.getElementById('light-slider2');
+const tnewrelease=document.getElementById('onair');
+const tupcoming=document.getElementById('light-slider3');
+
 
 async function getMovies() {
   const Presp = await fetch(PMURL);
@@ -83,26 +97,86 @@ async function getMovies() {
   return NresponseJSON;
   return UresponseJSON;
 }
-// async function getTV(){
-//   const resp=await fetch(TVAPIURL);
-//   const responseJSON=await resp.json();
 
-//   console.log(responseJSON);
+async function getTV(){
+  const Presp=await fetch(PTURL);
+  const PresponseJSON=await Presp.json();
 
-//   responseJSON.results.forEach(movie=>{
-//     const img=document.createElement('img');
-//     img.src=IMGPATH+movie.poster_path;
+  const Oresp=await fetch(NTURL);
+  const OresponseJSON=await Oresp.json();
 
-//     document.body.appendChild(img);
-//   });
+  const Tresp=await fetch(UTURL);
+  const TresponseJSON=await Tresp.json();
 
-//   return responseJSON;
-// }
+
+  PresponseJSON.results.forEach(tv => {
+    const {poster_path,name,vote_average}=tv;
+
+    const tvEl = document.createElement('li');
+    const tvC = document.createElement('div');
+    tvC.classList.add('ttv');
+
+
+    tvC.innerHTML = `
+    <img src="${IMGPATH+poster_path}" alt="${name}">
+    <div class="ttinfo">
+      <h5>${name}</h5>
+      <span>${vote_average}</span>
+    </div>
+    `;
+    tvEl.appendChild(tvC);
+    ttoprated.appendChild(tvEl);
+  });
+
+  OresponseJSON.results.forEach(tv => {
+    const {poster_path,name,vote_average}=tv;
+
+    const tvEl = document.createElement('div');
+    
+    tvEl.classList.add('ontv');
+
+
+    tvEl.innerHTML = `
+    <img src="${IMGPATH+poster_path}" alt="${name}">
+    <div class="oninfo">
+      <h5>${name}</h5>
+      <span>${vote_average}</span>
+    </div>
+    `;
+    tnewrelease.appendChild(tvEl);
+  });
+
+  TresponseJSON.results.forEach(tv => {
+    const {poster_path,name,vote_average}=tv;
+
+    const tvEl = document.createElement('li');
+    const tvC = document.createElement('div');
+    tvC.classList.add('atv');
+
+
+    tvC.innerHTML = `
+    <img src="${IMGPATH+poster_path}" alt="${name}">
+    <div class="atinfo">
+      <h5>${name}</h5>
+      <span>${vote_average}</span>
+    </div>
+    `;
+  
+    tvEl.appendChild(tvC);
+    tupcoming.appendChild(tvEl);
+  });
+
+  return PresponseJSON;
+  return OresponseJSON;
+  return TresponseJSON;
+}
+
 
 getMovies();
+getTV();
 
 
-// getTV();
+
 
 //Slider
 $(document).ready(function () {
@@ -113,6 +187,39 @@ $(document).ready(function () {
     pauseOnHover: true,
     pause: 3000,
     controls: false
+  });
+  slider.play();
+});
+$(document).ready(function () {
+  var slider = $("#light-slider1").lightSlider({
+    autoWidth: true,
+    loop: true,
+    speed: 2000,
+    pauseOnHover: true,
+    pause: 2000
+  });
+  slider.play();
+});
+
+//tv
+$(document).ready(function () {
+  var slider = $("#light-slider2").lightSlider({
+    autoWidth: true,
+    loop: true,
+    speed: 2000,
+    pauseOnHover: true,
+    pause: 3000,
+    controls: false
+  });
+  slider.play();
+});
+$(document).ready(function () {
+  var slider = $("#light-slider3").lightSlider({
+    autoWidth: true,
+    loop: true,
+    speed: 2000,
+    pauseOnHover: true,
+    pause: 2000
   });
   slider.play();
 });
