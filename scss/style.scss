@@ -12,6 +12,7 @@ body{
   background:  #031d33;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-family: 'Poppins',sans-serif;
+  overflow-x: hidden;
 }
 
 .spin-wrap{
@@ -83,6 +84,23 @@ header{
     }
   }
   .searchArea{
+    padding: 1.7rem;
+    justify-self: flex-end;
+    .search{
+      padding: 0.2rem 1rem;
+      background: transparent;
+      border: 1px solid rgba(33, 194, 154, 0.5);
+      border-radius: 15px;
+      color: #eee;
+      font-family: inherit;
+      outline: none;
+      &::placeholder{
+        color: rgba(238, 238, 238, 0.616);
+      }
+      &:focus{
+        background: rgba(238, 238, 238, 0.096);
+      }
+    }
   }
 }
 
