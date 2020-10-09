@@ -87,6 +87,7 @@ header{
     padding: 1.7rem;
     justify-self: flex-end;
     .search{
+      display:flex;
       padding: 0.2rem 1rem;
       background: transparent;
       border: 1px solid rgba(33, 194, 154, 0.5);
