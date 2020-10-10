@@ -1,6 +1,5 @@
-// preloader
 $(window).on("load",() =>{
-    $(".spin-wrap").fadeOut("slow");
+   $(".spin-wrap").fadeOut("slow");
 });
 const pre = document.querySelector('.spin-wrap');
 function loader() {
