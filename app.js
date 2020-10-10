@@ -1,11 +1,11 @@
-// $(window).on("load",() =>{
-//     $(".spin-wrap").fadeOut("slow");
-// });
+// preloader
+$(window).on("load",() =>{
+    $(".spin-wrap").fadeOut("slow");
+});
 const pre = document.querySelector('.spin-wrap');
 function loader() {
   pre.style.display = 'none';
 }
-
 
 
 const PMURL = 'https://api.themoviedb.org/3/movie/popular?api_key=2d21bdf2bd0f6a43f9a0dc995b785d06&language=en-US&page=1';
