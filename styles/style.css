@@ -7,57 +7,6 @@
       flex-wrap: wrap;
 }
 
-#main .movie, #main .tv {
-  margin: 1rem auto 1rem 1rem;
-  border-radius: 3px;
-  -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.205);
-          box-shadow: 0 4px 5px rgba(0, 0, 0, 0.205);
-  width: 160px;
-  background: rgba(165, 18, 18, 0.151);
-}
-
-#main .movie img, #main .tv img {
-  max-width: 100%;
-}
-
-#main .movie .info, #main .tv .info {
-  color: #eee;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0.5rem 1rem 1rem;
-  letter-spacing: 1px;
-}
-
-#main .movie .info h5, #main .tv .info h5 {
-  margin: 0;
-}
-
-#main .movie .info span, #main .tv .info span {
-  font-size: 0.9rem;
-  background: rgba(0, 0, 0, 0.445);
-  padding: 0.2rem 0.5rem;
-  border-radius: 3px;
-}
-
-#main .movie .info span.green, #main .tv .info span.green {
-  color: #139713;
-}
-
-#main .movie .info span.orange, #main .tv .info span.orange {
-  color: orange;
-}
-
-#main .movie .info span.red, #main .tv .info span.red {
-  color: red;
-}
-
 #movies,
 #tvs {
   max-width: 100vw;
@@ -131,12 +80,50 @@
 #tvs #airtdy .umovie,
 #tvs #airtdy .ttv,
 #tvs #airtdy .atv {
+  position: relative;
+  overflow: hidden;
   margin: 10px;
   background: #162835b6;
   border-radius: 3px;
   width: 300px;
   -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
           box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+}
+
+#movies #toprated .tmovie:hover .view,
+#movies #toprated .umovie:hover .view,
+#movies #toprated .ttv:hover .view,
+#movies #toprated .atv:hover .view,
+#movies #upcoming .tmovie:hover .view,
+#movies #upcoming .umovie:hover .view,
+#movies #upcoming .ttv:hover .view,
+#movies #upcoming .atv:hover .view,
+#movies #ttoprated .tmovie:hover .view,
+#movies #ttoprated .umovie:hover .view,
+#movies #ttoprated .ttv:hover .view,
+#movies #ttoprated .atv:hover .view,
+#movies #airtdy .tmovie:hover .view,
+#movies #airtdy .umovie:hover .view,
+#movies #airtdy .ttv:hover .view,
+#movies #airtdy .atv:hover .view,
+#tvs #toprated .tmovie:hover .view,
+#tvs #toprated .umovie:hover .view,
+#tvs #toprated .ttv:hover .view,
+#tvs #toprated .atv:hover .view,
+#tvs #upcoming .tmovie:hover .view,
+#tvs #upcoming .umovie:hover .view,
+#tvs #upcoming .ttv:hover .view,
+#tvs #upcoming .atv:hover .view,
+#tvs #ttoprated .tmovie:hover .view,
+#tvs #ttoprated .umovie:hover .view,
+#tvs #ttoprated .ttv:hover .view,
+#tvs #ttoprated .atv:hover .view,
+#tvs #airtdy .tmovie:hover .view,
+#tvs #airtdy .umovie:hover .view,
+#tvs #airtdy .ttv:hover .view,
+#tvs #airtdy .atv:hover .view {
+  -webkit-transform: rotateY(0);
+          transform: rotateY(0);
 }
 
 #movies #toprated .tmovie img,
@@ -975,6 +962,198 @@
   color: red;
 }
 
+#movies #toprated .tmovie .view,
+#movies #toprated .umovie .view,
+#movies #toprated .ttv .view,
+#movies #toprated .atv .view,
+#movies #upcoming .tmovie .view,
+#movies #upcoming .umovie .view,
+#movies #upcoming .ttv .view,
+#movies #upcoming .atv .view,
+#movies #ttoprated .tmovie .view,
+#movies #ttoprated .umovie .view,
+#movies #ttoprated .ttv .view,
+#movies #ttoprated .atv .view,
+#movies #airtdy .tmovie .view,
+#movies #airtdy .umovie .view,
+#movies #airtdy .ttv .view,
+#movies #airtdy .atv .view,
+#tvs #toprated .tmovie .view,
+#tvs #toprated .umovie .view,
+#tvs #toprated .ttv .view,
+#tvs #toprated .atv .view,
+#tvs #upcoming .tmovie .view,
+#tvs #upcoming .umovie .view,
+#tvs #upcoming .ttv .view,
+#tvs #upcoming .atv .view,
+#tvs #ttoprated .tmovie .view,
+#tvs #ttoprated .umovie .view,
+#tvs #ttoprated .ttv .view,
+#tvs #ttoprated .atv .view,
+#tvs #airtdy .tmovie .view,
+#tvs #airtdy .umovie .view,
+#tvs #airtdy .ttv .view,
+#tvs #airtdy .atv .view {
+  color: #000;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.973);
+  position: absolute;
+  max-height: 100%;
+  overflow: auto;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  -webkit-transition: -webkit-transform 0.3s ease-in;
+  transition: -webkit-transform 0.3s ease-in;
+  transition: transform 0.3s ease-in;
+  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+}
+
+#movies #toprated .tmovie .view::-webkit-scrollbar,
+#movies #toprated .umovie .view::-webkit-scrollbar,
+#movies #toprated .ttv .view::-webkit-scrollbar,
+#movies #toprated .atv .view::-webkit-scrollbar,
+#movies #upcoming .tmovie .view::-webkit-scrollbar,
+#movies #upcoming .umovie .view::-webkit-scrollbar,
+#movies #upcoming .ttv .view::-webkit-scrollbar,
+#movies #upcoming .atv .view::-webkit-scrollbar,
+#movies #ttoprated .tmovie .view::-webkit-scrollbar,
+#movies #ttoprated .umovie .view::-webkit-scrollbar,
+#movies #ttoprated .ttv .view::-webkit-scrollbar,
+#movies #ttoprated .atv .view::-webkit-scrollbar,
+#movies #airtdy .tmovie .view::-webkit-scrollbar,
+#movies #airtdy .umovie .view::-webkit-scrollbar,
+#movies #airtdy .ttv .view::-webkit-scrollbar,
+#movies #airtdy .atv .view::-webkit-scrollbar,
+#tvs #toprated .tmovie .view::-webkit-scrollbar,
+#tvs #toprated .umovie .view::-webkit-scrollbar,
+#tvs #toprated .ttv .view::-webkit-scrollbar,
+#tvs #toprated .atv .view::-webkit-scrollbar,
+#tvs #upcoming .tmovie .view::-webkit-scrollbar,
+#tvs #upcoming .umovie .view::-webkit-scrollbar,
+#tvs #upcoming .ttv .view::-webkit-scrollbar,
+#tvs #upcoming .atv .view::-webkit-scrollbar,
+#tvs #ttoprated .tmovie .view::-webkit-scrollbar,
+#tvs #ttoprated .umovie .view::-webkit-scrollbar,
+#tvs #ttoprated .ttv .view::-webkit-scrollbar,
+#tvs #ttoprated .atv .view::-webkit-scrollbar,
+#tvs #airtdy .tmovie .view::-webkit-scrollbar,
+#tvs #airtdy .umovie .view::-webkit-scrollbar,
+#tvs #airtdy .ttv .view::-webkit-scrollbar,
+#tvs #airtdy .atv .view::-webkit-scrollbar {
+  width: 5px;
+}
+
+#movies #toprated .tmovie .view::-webkit-scrollbar-thumb,
+#movies #toprated .umovie .view::-webkit-scrollbar-thumb,
+#movies #toprated .ttv .view::-webkit-scrollbar-thumb,
+#movies #toprated .atv .view::-webkit-scrollbar-thumb,
+#movies #upcoming .tmovie .view::-webkit-scrollbar-thumb,
+#movies #upcoming .umovie .view::-webkit-scrollbar-thumb,
+#movies #upcoming .ttv .view::-webkit-scrollbar-thumb,
+#movies #upcoming .atv .view::-webkit-scrollbar-thumb,
+#movies #ttoprated .tmovie .view::-webkit-scrollbar-thumb,
+#movies #ttoprated .umovie .view::-webkit-scrollbar-thumb,
+#movies #ttoprated .ttv .view::-webkit-scrollbar-thumb,
+#movies #ttoprated .atv .view::-webkit-scrollbar-thumb,
+#movies #airtdy .tmovie .view::-webkit-scrollbar-thumb,
+#movies #airtdy .umovie .view::-webkit-scrollbar-thumb,
+#movies #airtdy .ttv .view::-webkit-scrollbar-thumb,
+#movies #airtdy .atv .view::-webkit-scrollbar-thumb,
+#tvs #toprated .tmovie .view::-webkit-scrollbar-thumb,
+#tvs #toprated .umovie .view::-webkit-scrollbar-thumb,
+#tvs #toprated .ttv .view::-webkit-scrollbar-thumb,
+#tvs #toprated .atv .view::-webkit-scrollbar-thumb,
+#tvs #upcoming .tmovie .view::-webkit-scrollbar-thumb,
+#tvs #upcoming .umovie .view::-webkit-scrollbar-thumb,
+#tvs #upcoming .ttv .view::-webkit-scrollbar-thumb,
+#tvs #upcoming .atv .view::-webkit-scrollbar-thumb,
+#tvs #ttoprated .tmovie .view::-webkit-scrollbar-thumb,
+#tvs #ttoprated .umovie .view::-webkit-scrollbar-thumb,
+#tvs #ttoprated .ttv .view::-webkit-scrollbar-thumb,
+#tvs #ttoprated .atv .view::-webkit-scrollbar-thumb,
+#tvs #airtdy .tmovie .view::-webkit-scrollbar-thumb,
+#tvs #airtdy .umovie .view::-webkit-scrollbar-thumb,
+#tvs #airtdy .ttv .view::-webkit-scrollbar-thumb,
+#tvs #airtdy .atv .view::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #302c2c;
+}
+
+#movies #toprated .tmovie .view h4,
+#movies #toprated .umovie .view h4,
+#movies #toprated .ttv .view h4,
+#movies #toprated .atv .view h4,
+#movies #upcoming .tmovie .view h4,
+#movies #upcoming .umovie .view h4,
+#movies #upcoming .ttv .view h4,
+#movies #upcoming .atv .view h4,
+#movies #ttoprated .tmovie .view h4,
+#movies #ttoprated .umovie .view h4,
+#movies #ttoprated .ttv .view h4,
+#movies #ttoprated .atv .view h4,
+#movies #airtdy .tmovie .view h4,
+#movies #airtdy .umovie .view h4,
+#movies #airtdy .ttv .view h4,
+#movies #airtdy .atv .view h4,
+#tvs #toprated .tmovie .view h4,
+#tvs #toprated .umovie .view h4,
+#tvs #toprated .ttv .view h4,
+#tvs #toprated .atv .view h4,
+#tvs #upcoming .tmovie .view h4,
+#tvs #upcoming .umovie .view h4,
+#tvs #upcoming .ttv .view h4,
+#tvs #upcoming .atv .view h4,
+#tvs #ttoprated .tmovie .view h4,
+#tvs #ttoprated .umovie .view h4,
+#tvs #ttoprated .ttv .view h4,
+#tvs #ttoprated .atv .view h4,
+#tvs #airtdy .tmovie .view h4,
+#tvs #airtdy .umovie .view h4,
+#tvs #airtdy .ttv .view h4,
+#tvs #airtdy .atv .view h4 {
+  margin-top: 0;
+}
+
+#movies #toprated .tmovie .view p,
+#movies #toprated .umovie .view p,
+#movies #toprated .ttv .view p,
+#movies #toprated .atv .view p,
+#movies #upcoming .tmovie .view p,
+#movies #upcoming .umovie .view p,
+#movies #upcoming .ttv .view p,
+#movies #upcoming .atv .view p,
+#movies #ttoprated .tmovie .view p,
+#movies #ttoprated .umovie .view p,
+#movies #ttoprated .ttv .view p,
+#movies #ttoprated .atv .view p,
+#movies #airtdy .tmovie .view p,
+#movies #airtdy .umovie .view p,
+#movies #airtdy .ttv .view p,
+#movies #airtdy .atv .view p,
+#tvs #toprated .tmovie .view p,
+#tvs #toprated .umovie .view p,
+#tvs #toprated .ttv .view p,
+#tvs #toprated .atv .view p,
+#tvs #upcoming .tmovie .view p,
+#tvs #upcoming .umovie .view p,
+#tvs #upcoming .ttv .view p,
+#tvs #upcoming .atv .view p,
+#tvs #ttoprated .tmovie .view p,
+#tvs #ttoprated .umovie .view p,
+#tvs #ttoprated .ttv .view p,
+#tvs #ttoprated .atv .view p,
+#tvs #airtdy .tmovie .view p,
+#tvs #airtdy .umovie .view p,
+#tvs #airtdy .ttv .view p,
+#tvs #airtdy .atv .view p {
+  font-weight: 600;
+  font-style: italic;
+  font-size: 90%;
+}
+
 #movies #newrelease,
 #movies #onair,
 #tvs #newrelease,
@@ -998,10 +1177,24 @@
   margin: 1rem auto 1rem 1rem;
   max-width: 100vw;
   border-radius: 3px;
+  position: relative;
+  overflow: hidden;
   -webkit-box-shadow: 0 4px 5px rgba(0, 0, 0, 0.205);
           box-shadow: 0 4px 5px rgba(0, 0, 0, 0.205);
   width: 160px;
   background: rgba(165, 18, 18, 0.151);
+}
+
+#movies #newrelease .nmovie:hover .view,
+#movies #newrelease .ontv:hover .view,
+#movies #onair .nmovie:hover .view,
+#movies #onair .ontv:hover .view,
+#tvs #newrelease .nmovie:hover .view,
+#tvs #newrelease .ontv:hover .view,
+#tvs #onair .nmovie:hover .view,
+#tvs #onair .ontv:hover .view {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 #movies #newrelease .nmovie img,
@@ -1143,6 +1336,79 @@
   color: red;
 }
 
+#movies #newrelease .nmovie .view,
+#movies #newrelease .ontv .view,
+#movies #onair .nmovie .view,
+#movies #onair .ontv .view,
+#tvs #newrelease .nmovie .view,
+#tvs #newrelease .ontv .view,
+#tvs #onair .nmovie .view,
+#tvs #onair .ontv .view {
+  color: #000;
+  padding: 0.7rem;
+  background: rgba(255, 255, 255, 0.973);
+  position: absolute;
+  max-height: 100%;
+  max-width: 100%;
+  overflow: auto;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: translateY(105%);
+          transform: translateY(105%);
+  -webkit-transition: -webkit-transform 0.3s ease-in;
+  transition: -webkit-transform 0.3s ease-in;
+  transition: transform 0.3s ease-in;
+  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+}
+
+#movies #newrelease .nmovie .view::-webkit-scrollbar,
+#movies #newrelease .ontv .view::-webkit-scrollbar,
+#movies #onair .nmovie .view::-webkit-scrollbar,
+#movies #onair .ontv .view::-webkit-scrollbar,
+#tvs #newrelease .nmovie .view::-webkit-scrollbar,
+#tvs #newrelease .ontv .view::-webkit-scrollbar,
+#tvs #onair .nmovie .view::-webkit-scrollbar,
+#tvs #onair .ontv .view::-webkit-scrollbar {
+  width: 2px;
+}
+
+#movies #newrelease .nmovie .view::-webkit-scrollbar-thumb,
+#movies #newrelease .ontv .view::-webkit-scrollbar-thumb,
+#movies #onair .nmovie .view::-webkit-scrollbar-thumb,
+#movies #onair .ontv .view::-webkit-scrollbar-thumb,
+#tvs #newrelease .nmovie .view::-webkit-scrollbar-thumb,
+#tvs #newrelease .ontv .view::-webkit-scrollbar-thumb,
+#tvs #onair .nmovie .view::-webkit-scrollbar-thumb,
+#tvs #onair .ontv .view::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #302c2c;
+}
+
+#movies #newrelease .nmovie .view h4,
+#movies #newrelease .ontv .view h4,
+#movies #onair .nmovie .view h4,
+#movies #onair .ontv .view h4,
+#tvs #newrelease .nmovie .view h4,
+#tvs #newrelease .ontv .view h4,
+#tvs #onair .nmovie .view h4,
+#tvs #onair .ontv .view h4 {
+  margin-top: 0;
+}
+
+#movies #newrelease .nmovie .view p,
+#movies #newrelease .ontv .view p,
+#movies #onair .nmovie .view p,
+#movies #onair .ontv .view p,
+#tvs #newrelease .nmovie .view p,
+#tvs #newrelease .ontv .view p,
+#tvs #onair .nmovie .view p,
+#tvs #onair .ontv .view p {
+  font-weight: 600;
+  font-style: italic;
+  font-size: 90%;
+}
+
 @media screen and (min-width: 699px) {
   header .logo svg {
     margin: 5px;
@@ -1162,16 +1428,22 @@
   header .searchArea #form #search {
     font-size: 1rem;
   }
-  main #movies, main #tvs {
+  main #movies,
+  main #tvs {
     margin: 0;
   }
-  main #movies h2, main #tvs h2 {
+  main #movies h2,
+  main #tvs h2 {
     font-size: 1.3rem;
   }
-  main #movies h4, main #tvs h4 {
+  main #movies h4,
+  main #tvs h4 {
     font-size: 1.1rem;
   }
-  main #movies h5, main #movies span, main #tvs h5, main #tvs span {
+  main #movies h5,
+  main #movies span,
+  main #tvs h5,
+  main #tvs span {
     font-size: 0.9rem;
   }
 }
@@ -1198,16 +1470,22 @@
   header .searchArea #form #search {
     font-size: 1.2rem;
   }
-  main #movies, main #tvs {
+  main #movies,
+  main #tvs {
     margin: 0;
   }
-  main #movies h2, main #tvs h2 {
+  main #movies h2,
+  main #tvs h2 {
     font-size: 1.4rem;
   }
-  main #movies h4, main #tvs h4 {
+  main #movies h4,
+  main #tvs h4 {
     font-size: 1.2rem;
   }
-  main #movies h5, main #movies span, main #tvs h5, main #tvs span {
+  main #movies h5,
+  main #movies span,
+  main #tvs h5,
+  main #tvs span {
     font-size: 1rem;
   }
 }
@@ -1360,7 +1638,7 @@ header nav ul li a {
 }
 
 header .searchArea {
-  padding: 1.7rem 0.3rem;
+  padding: 1.7rem 0.1rem;
   justify-self: flex-end;
   max-width: 100%;
 }

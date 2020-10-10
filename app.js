@@ -55,7 +55,7 @@ async function getMovies() {
   console.log(PresponseJSON);
 
   PresponseJSON.results.forEach(movie => {
-    const { poster_path, title, vote_average } = movie;
+    const { poster_path, title, vote_average,overview,original_language,release_date } = movie;
 
     const movieEl = document.createElement('li');
     const movieC = document.createElement('div');
@@ -68,13 +68,18 @@ async function getMovies() {
       <h5>${title}</h5>
       <span class='${getColor(vote_average)}'>${vote_average}</span>
     </div>
+    <div class="view">
+    <h4>Overview</h4>
+    <p>Language: ${original_language}<br>Release: ${release_date} </p>
+      ${overview}
+    </div>
     `;
     movieEl.appendChild(movieC);
     toprated.appendChild(movieEl);
   });
   // NEW
   NresponseJSON.results.forEach(movie => {
-    const { poster_path, title, vote_average } = movie;
+    const { poster_path, title, vote_average,overview,original_language,release_date } = movie;
 
     const movieEl = document.createElement('div');
 
@@ -87,6 +92,11 @@ async function getMovies() {
       <h5>${title}</h5>
       <span class='${getColor(vote_average)}'>${vote_average}</span>
     </div>
+    <div class="view">
+    <h4>Overview</h4>
+    <p>Language: ${original_language}<br>Release: ${release_date} </p>
+      ${overview}
+    </div>
     `;
     newrelease.appendChild(movieEl);
   });
@@ -94,7 +104,7 @@ async function getMovies() {
   // upcoming
 
   UresponseJSON.results.forEach(movie => {
-    const { poster_path, title, vote_average } = movie;
+    const { poster_path, title, vote_average,overview,original_language,release_date } = movie;
 
     const movieEl = document.createElement('li');
     const movieC = document.createElement('div');
@@ -106,6 +116,11 @@ async function getMovies() {
     <div class="uinfo">
       <h5>${title}</h5>
       <span class='${getColor(vote_average)}'>${vote_average}</span>
+    </div>
+    <div class="view">
+    <h4>Overview</h4>
+    <p>Language: ${original_language}<br>Release: ${release_date} </p>
+      ${overview}
     </div>
     `;
 
@@ -131,6 +146,7 @@ async function getTV() {
   const Presp = await fetch(PTURL);
   const PresponseJSON = await Presp.json();
 
+  console.log(PresponseJSON);
   const Oresp = await fetch(NTURL);
   const OresponseJSON = await Oresp.json();
 
@@ -139,7 +155,7 @@ async function getTV() {
 
 
   PresponseJSON.results.forEach(tv => {
-    const { poster_path, name, vote_average } = tv;
+    const { poster_path, name, vote_average,overview,original_language,first_air_date } = tv;
 
     const tvEl = document.createElement('li');
     const tvC = document.createElement('div');
@@ -152,13 +168,18 @@ async function getTV() {
       <h5>${name}</h5>
       <span class='${getColor(vote_average)}'>${vote_average}</span>
     </div>
+    <div class="view">
+    <h4>Overview</h4>
+    <p>Language: ${original_language}<br>Release: ${first_air_date} </p>
+      ${overview}
+    </div>
     `;
     tvEl.appendChild(tvC);
     ttoprated.appendChild(tvEl);
   });
 
   OresponseJSON.results.forEach(tv => {
-    const { poster_path, name, vote_average } = tv;
+    const { poster_path, name, vote_average,overview,original_language,first_air_date } = tv;
 
     const tvEl = document.createElement('div');
 
@@ -171,12 +192,17 @@ async function getTV() {
       <h5>${name}</h5>
       <span class='${getColor(vote_average)}'>${vote_average}</span>
     </div>
+    <div class="view">
+    <h4>Overview</h4>
+    <p>Language: ${original_language}<br>Release: ${first_air_date} </p>
+      ${overview}
+    </div>
     `;
     tnewrelease.appendChild(tvEl);
   });
 
   TresponseJSON.results.forEach(tv => {
-    const { poster_path, name, vote_average } = tv;
+    const { poster_path, name, vote_average,overview,original_language,first_air_date } = tv;
 
     const tvEl = document.createElement('li');
     const tvC = document.createElement('div');
@@ -188,6 +214,11 @@ async function getTV() {
     <div class="atinfo">
       <h5>${name}</h5>
       <span class='${getColor(vote_average)}'>${vote_average}</span>
+    </div>
+    <div class="view">
+    <h4>Overview</h4>
+    <p>Language: ${original_language}<br>Release: ${first_air_date} </p>
+      ${overview}
     </div>
     `;
 
@@ -261,7 +292,7 @@ async function showSearch(term) {
 
 
   SresponseJSON.results.forEach(term => {
-    const { poster_path, title, vote_average } = term;
+    const { poster_path, title, vote_average ,overview,original_language,first_air_date,release_date} = term;
 
     const movieEl = document.createElement('div');
     movieEl.id = 'movies';
@@ -273,6 +304,11 @@ async function showSearch(term) {
     <div class="info">
       <h5>${title}</h5>
       <span class='${getColor(vote_average)}'>${vote_average}</span>
+    </div>
+    <div class="view">
+    <h4>Overview</h4>
+    <p>Language: ${original_language}<br>Release: ${release_date} </p>
+      ${overview}
     </div>
     `;
     main.appendChild(movieEl);
@@ -290,6 +326,11 @@ async function showSearch(term) {
     <div class="info">
       <h5>${name}</h5>
       <span class='${getColor(vote_average)}'>${vote_average}</span>
+    </div>
+    <div class="view">
+    <h4>Overview</h4>
+    <p>Language: ${original_language}<br>Release: ${first_air_date} </p>
+      ${overview}
     </div>
     `;
     main.appendChild(tvEl);

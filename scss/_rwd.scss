@@ -12,7 +12,7 @@
       ul {
         li {
           font-size: 1.2rem;
-          a{
+          a {
             margin: 20px;
           }
         }
@@ -20,33 +20,34 @@
     }
     .searchArea {
       padding: 1.8rem;
-      #form{
-        #search{
+      #form {
+        #search {
           font-size: 1rem;
         }
       }
     }
   }
 
-  main{
-    #movies,#tvs{
+  main {
+    #movies,
+    #tvs {
       margin: 0;
-      h2{
-        font-size: 1.3rem ;
+      h2 {
+        font-size: 1.3rem;
       }
-      h4{
+      h4 {
         font-size: 1.1rem;
       }
-      h5,span{
+      h5,
+      span {
         font-size: 0.9rem;
       }
-
+        
     }
   }
-
 }
 
-@media screen and (min-width: 1025px){
+@media screen and (min-width: 1025px) {
   header {
     .logo {
       svg {
@@ -60,7 +61,7 @@
       ul {
         li {
           font-size: 1.4rem;
-          a{
+          a {
             margin: 25px;
           }
         }
@@ -68,30 +69,29 @@
     }
     .searchArea {
       padding: 1.9rem;
-      #form{
+      #form {
         padding: 0.5rem;
-        #search{
+        #search {
           font-size: 1.2rem;
         }
       }
     }
   }
 
-  main{
-    #movies,#tvs{
+  main {
+    #movies,
+    #tvs {
       margin: 0;
-      h2{
-        font-size: 1.4rem ;
+      h2 {
+        font-size: 1.4rem;
       }
-      h4{
+      h4 {
         font-size: 1.2rem;
       }
-      h5,span{
+      h5,
+      span {
         font-size: 1rem;
       }
-      
     }
   }
-
 }
-
