@@ -14,6 +14,13 @@
           box-shadow: 0 4px 5px rgba(0, 0, 0, 0.205);
   width: 160px;
   background: rgba(165, 18, 18, 0.151);
+  position: relative;
+  overflow: hidden;
+}
+
+#main .movie:hover .view, #main .tv:hover .view {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 #main .movie img, #main .tv img {
@@ -56,6 +63,44 @@
 
 #main .movie .info span.red, #main .tv .info span.red {
   color: red;
+}
+
+#main .movie .view, #main .tv .view {
+  color: #000;
+  padding: 0.7rem;
+  background: rgba(255, 255, 255, 0.973);
+  position: absolute;
+  max-height: 100%;
+  max-width: 100%;
+  overflow: auto;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  -webkit-transform: translateY(105%);
+          transform: translateY(105%);
+  -webkit-transition: -webkit-transform 0.3s ease-in;
+  transition: -webkit-transform 0.3s ease-in;
+  transition: transform 0.3s ease-in;
+  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+}
+
+#main .movie .view::-webkit-scrollbar, #main .tv .view::-webkit-scrollbar {
+  width: 2px;
+}
+
+#main .movie .view::-webkit-scrollbar-thumb, #main .tv .view::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #302c2c;
+}
+
+#main .movie .view h4, #main .tv .view h4 {
+  margin-top: 0;
+}
+
+#main .movie .view p, #main .tv .view p {
+  font-weight: 600;
+  font-style: italic;
+  font-size: 90%;
 }
 
 #movies,

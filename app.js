@@ -315,7 +315,7 @@ async function showSearch(term) {
   });
 
   STresponseJSON.results.forEach(tterm => {
-    const { poster_path, name, vote_average } = tterm;
+    const { poster_path, name, vote_average,original_language,first_air_date,overview } = tterm;
 
     const tvEl = document.createElement('div');
     tvEl.id = 'tvs';

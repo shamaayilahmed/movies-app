@@ -8,6 +8,11 @@
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.205);
     width: 160px;
     background: rgba(165, 18, 18, 0.151);
+    position: relative;
+    overflow: hidden;
+    &:hover .view{
+      transform: translateY(0);
+    }
     img {
       max-width: 100%;
     }
@@ -35,6 +40,36 @@
         &.red {
           color: red;
         }
+      }
+      
+    }
+    .view{
+      color: #000;
+      padding: 0.7rem;
+      background: rgba(255, 255, 255, 0.973);
+      position: absolute;
+      max-height: 100%;
+      max-width: 100%;
+      overflow: auto;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      transform: translateY(105%);
+      transition: transform 0.3s ease-in;
+      &::-webkit-scrollbar{
+        width: 2px;
+      }
+      &::-webkit-scrollbar-thumb{
+        border-radius: 10px;
+        background: rgb(48, 44, 44);
+      }
+      h4{
+        margin-top: 0;
+      }
+      p{
+        font-weight: 600;
+        font-style: italic;
+        font-size: 90%;
       }
     }
   }
